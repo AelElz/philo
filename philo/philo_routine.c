@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo_routine.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ael-azha <ael-azha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayoub <ayoub@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/06 15:22:20 by ael-azha          #+#    #+#             */
-/*   Updated: 2025/06/06 21:15:09 by ael-azha         ###   ########.fr       */
+/*   Updated: 2025/06/10 17:09:41 by ayoub            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,6 @@ void	print_action(t_philo *philo, char *action)
 
 void	handle_one_philosopher(t_philo *philo)
 {
-	long	start;
-
-	start = get_current_time();
 	print_action(philo, "has taken a fork");
 	ft_usleep(philo->input->die_time, philo);
 }
